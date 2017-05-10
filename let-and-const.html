@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  // Old way of creating a variable
+  var name = 'Elliot';
+
+  // var doesn't describe what the variable is for
+  // but let and const do.
+  //
+  // A let variable can be re-assigned
+  // A const variable cannot
+
+  // Creating a variable that may be reassigned later
+  let personsAge = 22;
+  if(new Date().getFullYear() === 2017) {
+    personsAge = 23;
+  }
+  console.log('My age is: ' + personsAge);
+
+
+  // If we do this with a const, we'll get an error
+  const myAge = 22;
+  if(new Date().getFullYear() === 2017) {
+    // myAge = 23; // Uncaught TypeError: Assignment to constant variable.
+  }
+
+
+  // Const variables can have properties change
+  const person = {name: 'Sioned', age: 31};
+  person.adult = person.age > 18;
+  console.log(person);
+
+
+  // Using const in scope
+  const people = [{name: 'Sam', age: 13}, {name: 'Kate', age: 42}, {name: 'Ben', age: 23}];
+  for (let i = people.length - 1; i >= 0; i--) {
+    const age = person.age;
+    people[i].adult = age > 18;
+  }
+  console.log(people);
+  // console.log(age); // Uncaught ReferenceError: age is not defined
+
+
+  // When should I use var?
+  // Never!
+  // Seriously, you don't need it anymore
+  // All your variables will either be re-assigned or not
+
+</script>
+</body>
+</html>
