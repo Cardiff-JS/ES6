@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  // When creating strings with variables we used to have to use multiple strings together
+  const name = 'Huw';
+  const string = 'My name is: ' + name;
+
+  // Now we can do this
+  const myName = `My name is: ${name}`;
+
+  // And before, when we needed to do new lines we had to use \n
+  // Now we don't need to
+  const paragraph = `Dear ${name},
+    Pleased to meet you.`;
+
+  // We can also run functions in a template literal
+  const greeting = `hello ${(() => 'everyone')()}`;
+
+</script>
+</body>
+</html>

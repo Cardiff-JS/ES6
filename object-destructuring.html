@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  const post = {
+    id: '123',
+    title: 'Why do people like buzzfeed',
+    content: 'I don\'t know';
+  };
+
+  // If you wanted to get the title of the above post you used to have to do this
+  const title = post.title;
+
+  // And now we don't have to type title twice, we can be lazy (the new variable name must match the key in the object)
+  const { title } = post;
+
+  // What if you already have a title varialbe? We can rename the variable when we get it
+  const { title: postTitle } = post;
+
+  // We can also give it a default value incase it's undefined
+  const { title = '' } = post;
+
+</script>
+</body>
+</html>

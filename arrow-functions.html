@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  // Old way of making an anonymous function
+  const getFood = function(food) {
+    return food;
+  }
+
+  // Arrow functions allow you to write anonymous functions without saying function
+  const getFoodArrow = (food) => {
+    return food;
+  }
+
+  // Now that's still a bit too much code, we can make it smaller with an implicit return
+  // we can also get rid of the brackets around the parameters when there's only one
+  const getFoodSmall = food => food;
+
+</script>
+</body>
+</html>

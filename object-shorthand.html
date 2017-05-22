@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+    const id = '123';
+    const title = 'Why do people like buzzfeed';
+    const content = 'I don\'t know';
+
+    // If we have a bunch of variables we need to put into an object and we want the key to be the same
+    // as the variable the value is stored in, we can just do the following:
+
+    const post = {
+      id,
+      title,
+      content
+    };
+
+    // There's also a new shorthand for writing functions
+    const person = {
+      name: 'Dewi',
+      getName() {
+        return this.name;
+      }
+    }
+
+    // That's exactly the same as writing
+    const person2 = {
+      name: 'Dewi',
+      getName: function() {
+        return this.name;
+      }
+    }
+
+</script>
+</body>
+</html>

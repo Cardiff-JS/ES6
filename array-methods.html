@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  const ages = [41, 34, 92, 3, 98, 23];
+  const people [{
+    name: 'Siôn',
+    age: 23
+  }, {
+    name: 'Alys',
+    age: 46
+  }, {
+    name: 'Sophie',
+    age: 25
+  }]
+
+  // The some method returns true or false depending if at least one item causes the callback function to be true
+  const hasChild = ages.some(age => age < 18); // true
+
+  // The ever method is similar but all valyes must cause the callback to be true for the result to be true
+  const under100 = ages.every(age => age < 100); // true
+
+  // The find method returns the first value that meets the criteria
+  const Alys = people.find(person => person.name = 'Alys');
+
+  // The findIndex method is identical to the find method but gets the index of the item instead of the item itself
+  const whereIsAlys = people.find(person => person.name = 'Alys');
+
+</script>
+</body>
+</html>

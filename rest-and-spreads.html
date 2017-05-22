@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  const footballers = ['Amy', 'Mark', 'Tom', 'Eleri', 'Sioned'];
+
+  // We can get the first value given to the function and then scoop up the rest into an array
+  const createTeam = (captain, ...players) => ({
+    captain,
+    players
+  });
+
+  // Now we can use the footballers array and spread it's values out into the function
+  createTeam(...footballers);
+
+  // The above would be the same as doing the following, but without needing to know the length of the array
+  createTeam(footballers[0], footballers[1], footballers[2], footballers[3], footballers[4]);
+
+</script>
+</body>
+</html>

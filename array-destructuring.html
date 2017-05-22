@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  const fruit = ['apple', 'banana', 'mango', 'grapefruit'];
+
+  // Old way of getting the first value from an array
+  const apple = fruit[0];
+
+  // Now we can use destructuring to get the first element
+  const [ apple ] = fruit;
+
+  // If we want to get the first two, then just put a comma between them
+  const [ apple, banana ] = fruit;
+
+  // If we only want the second item in the array then do this
+  const [ , banana ] = fruit;
+
+</script>
+</body>
+</html>
